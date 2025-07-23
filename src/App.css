@@ -1,38 +1,222 @@
-.App {
-  text-align: center;
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  /* background-color: #ffffff !important; */
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header {
+  background-color: #f2f1ef;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.bc_blue{
+  background: linear-gradient(to right, #02bcf5f3, #25cafc);
+
+}
+/* .navbar {
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1) !important;
+} */
+
+.navbar-brand {
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav-link {
+  color: #272727 !important;
+  margin-right: 1rem !important;
+  font-weight: 700 !important;
+  transition: color 0.3s ease !important;
+}
+
+.nav-link:hover {
+  color: #007bff !important;
+}
+
+.banner {
+  /* height: 400px; */
+  background: linear-gradient(to right, #0294f5, #2574fc9d);
+  color: white;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.banner h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.btn-pr_org {
+  background-color: #f7b234 !important; /* Light orange */
+  border: none;
+  padding: 0.5rem 1rem;
   color: white;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
 }
 
-.App-link {
-  color: #61dafb;
+.btn-pr_org:hover {
+  background-color: #e69500 !important; 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.about, .services, .clients, .contact {
+  padding: 60px 0;
+}
+
+.about img, .services img {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  background-color: #f8f9fa;
+  padding: 1rem 0;
+  text-align: center;
+  color: #777;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #007bff;
+  border-radius: 50%;
+}
+
+.carousel-item {
+  text-align: center;
+  padding: 2rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hover-effect:hover{
+transform: scale(1.05);
+transition: transform 0.3s ease-in-out;
+}
+
+.contact-section {
+  background-color: #fff;
+}
+
+.contact-section h2 {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.contact-section form input,
+.contact-section form textarea {
+  border-radius: 0.5rem;
+}
+
+.contact-section .btn-warning {
+  background-color: #f57c00;
+  border: none;
+}
+
+.contact-section .btn-warning:hover {
+  background-color: #e65100;
+}
+
+
+.contact-section {
+  background-color: #f5f9ff;
+}
+
+.contact-section h2 {
+  color: #004080;
+}
+
+.contact-section .form-control {
+  border-radius: 0.5rem;
+}
+
+.contact-section .btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+  font-weight: 600;
+}
+
+.contact-section .btn-primary:hover {
+  background-color: #0056b3;
+}
+.about-section {
+  background-color: #f5f9ff;
+}
+
+.about-section h2 {
+  color: #003366;
+}
+
+.about-section p {
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+
+.hover-effect:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  transition: 0.3s ease-in-out;
+}
+
+.hover-shadow:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0.75rem 1.25rem rgba(0, 0, 0, 0.15);
+  transition: 0.3s ease-in-out;
+}
+
+
+.service_bg{
+  background-image: url('images/service_background.jpg');
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: cover;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  background-attachment: fixed;
+  background-blend-mode: overlay;
+  background-color: rgba(0, 0, 0, 0.185);
+
+}
+
+.footer-link {
+  color: #000000;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-link:hover {
+  color: #46adb4;
+  text-decoration: underline;
+}
+
+.footer-contact {
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+
+.contact-hero {
+  height: 200px;
+  /* background: url('./images/contact_banner.jpg') center center / cover no-repeat; */
+  position: relative;
+}
+
+.contact-hero .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(138, 43, 226, 0.7), rgba(0, 123, 255, 0.7));
+  z-index: 0;
+}
+
+.contact-hero h1 {
+  z-index: 1;
 }
